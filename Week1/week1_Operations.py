@@ -58,7 +58,7 @@ print str(tens) + str(ones) + ":00"
 
 # Python modules - extra functions implemented outside basic Python
 
-import simplegui	# access to drawing operations for interactive applications
+#import simplegui	# access to drawing operations for interactive applications
 
 import math	 		# access to standard math functions, e.g; trig
 
