@@ -1,5 +1,5 @@
 # Rock-paper-scissors-lizard-Spock template
-
+import random
 
 # The key idea of this program is to equate the strings
 # "rock", "paper", "scissors", "lizard", "Spock" to numbers
@@ -35,16 +35,14 @@ def number_to_name(number):
         outName = "Error Input"
         
     return outName
-    
-print "convert to number  = ", number_to_name(3)  
-
-print "-4 mod 5", -4 %5
-print "4 mod 5", 4 %5
-
-    
-        
+   
+##test sequence   
+#print "convert to number  = ", number_to_name(3)  
+#print "-4 mod 5", -4 %5
+#print "4 mod 5", 4 %5
 
     
+         
 def name_to_number(name):
     # fill in your code below
 
@@ -65,10 +63,10 @@ def name_to_number(name):
         
     return outName
     
-    
-print "convert to name  = ", name_to_number("scissors")
+##test print   
+#print "convert to name  = ", name_to_number("scissors")
 
-import random
+
 
 def rpsls(name): 
     # fill in your code below
@@ -82,24 +80,24 @@ def rpsls(name):
     deltaModulo = (player_number - comp_number) % 5
     # use if/elif/else to determine winner
     if deltaModulo == 1 or deltaModulo == 2:
-        winner = "player"
+        winner = "Player"
     elif deltaModulo == 3 or deltaModulo == 4:
-        winner = "computer"
+        winner = "Computer"
     elif deltaModulo == 0:
-        winner = "draw"
+        winner = "Draw"
     else:
         winner = "error"
     
     
     # convert comp_number to name using number_to_name
     comp_name = number_to_name(comp_number)
-    # print results
-    
-    print"\n ==== ", deltaModulo
-    print "player_name = ", name
-    print "comp_name = ", comp_name
-    print "winner = ", winner
-
+   
+    ## print results
+    # print"\n ==== ", deltaModulo
+    print "Player chooses ", name
+    print "Computer chooses", comp_name
+    print  winner, "wins!"
+    print "\n"
     
 # test your code
 rpsls("rock")
@@ -109,3 +107,8 @@ rpsls("lizard")
 rpsls("scissors")
 
 # always remember to check your completed program against the grading rubric
+
+
+#Player chooses rock 
+#Computer chooses scissors 
+#Player wins! 
