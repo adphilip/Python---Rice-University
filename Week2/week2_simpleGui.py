@@ -5,6 +5,16 @@
 # Some features may work in other browsers, but do not expect
 # full functionality.  It does NOT run in Internet Explorer.
 
+##Seven steps
+#1. Global /state
+#2. Helper functions
+#3. Classes 
+#4. Define event handlers
+#5. Create frame
+#6. Register event handlers
+#7. Start frame & timers
+
+
 import simplegui
 
 message = "Welcome!"
